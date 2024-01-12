@@ -43,20 +43,64 @@ nav li a {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
+    margin-bottom: 20px;
 }
 
 .banner-des {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .btn-primary {
+    width: 180px;
+    height: 64px;
+    border: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.banner img {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
     
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
